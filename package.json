@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "micro-dev",
+    "start": "micro",
+    "precommit": "pretty-quick --staged",
+    "test": "jest"
+  },
+  "dependencies": {
+    "micro": "^9.1.4",
+    "microrouter": "^3.1.1",
+    "stripe": "^5.5.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "micro-dev": "^2.2.2",
+    "prettier": "^1.11.1",
+    "pretty-quick": "^1.4.1",
+    "test-listen": "^1.1.0"
+  }
+}
