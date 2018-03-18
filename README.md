@@ -22,7 +22,7 @@ yarn dev
 
 Send a request to `http://localhost:3000` including the following payload
 
-```bash
+```json
 {
   "amount": 999,
   "currency": "gbp",
