@@ -24,7 +24,7 @@ Send a request to `http://localhost:3000` including the following payload
 
 ```bash
 {
-	"amount": 999,
+  "amount": 999,
   "currency": "gbp",
   "description": "Example charge",
   "source": "tok_visa"
