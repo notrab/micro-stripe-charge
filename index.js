@@ -7,11 +7,12 @@ module.exports = router(
     const data = await json(req)
 
     try {
-      const charge = await stripe.charges.create(data)
+      const { status } = await stripe.charges.create(data)
 
-      send(res, 200, { message: 'Charge was successful.', charge })
+      send(res, 200, { status })
     } catch (e) {
-      send(res, 500, e.message)
+      console.log(e)
+      send(res, 500, { message: e.message })
     }
   })
 )
